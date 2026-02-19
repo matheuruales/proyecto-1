@@ -3,72 +3,116 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Proyecto Animal</title>
+    <title>Proyecto Animal - Ornitorrinco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Ornitorrinco</h1>
+    <header class="header-section py-4">
+      <div class="container">
+        <div class="header-controls">
+          <button id="themeToggleBtn" class="control-btn theme-btn" title="Cambiar a modo oscuro">
+            🌙
+          </button>
+          <button id="perryToggleBtn" class="control-btn perry-btn" title="Ver a Perry el Ornitorrinco">
+            ❓
+          </button>
+        </div>
+        <h1 class="main-title">Ornitorrinco</h1>
+        <p class="subtitle-header">Descubre uno de los mamíferos más fascinantes del mundo</p>
+      </div>
     </header>
 
-    <main>
-      <img
-        src="source/imagenes/ornitorrinco.png"
-        alt="Ornitorrinco en un entorno natural."
-      />
+    <main class="main-content py-5">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <div class="image-container">
+              <img
+                src="source/imagenes/ornitorrinco.png"
+                alt="Ornitorrinco en un entorno natural"
+                class="img-fluid animal-image"
+              />
+            </div>
+          </div>
 
-      <section>
-        <h2>Descripcion</h2>
-        <p>
-          El ornitorrinco (Ornithorhynchus anatinus) es un mamifero monotremo
-          semiacuatico originario del este de Australia. Destaca por su pico
-          parecido al de un pato, patas palmeadas y cola ancha; ademas, es uno de
-          los pocos mamiferos que ponen huevos.
-        </p>
-      </section>
+          <div class="col-lg-6 col-md-12">
+            <section class="content-section">
+              <h2 class="section-title">Descripción</h2>
+              <p class="section-text">
+                El ornitorrinco (Ornithorhynchus anatinus) es un mamífero monotremo
+                semiácuatico originario del este de Australia. Destaca por su pico
+                parecido al de un pato, patas palmeadas y cola ancha; además, es uno de
+                los pocos mamíferos que ponen huevos.
+              </p>
+            </section>
+          </div>
+        </div>
 
-      <section>
-        <h2>Caracteristicas principales</h2>
-        <ul>
-          <li>
-            Habitat: rios, arroyos y lagos de agua dulce en el este de Australia
-            y Tasmania.
-          </li>
-          <li>
-            Alimentacion: invertebrados acuaticos como insectos, larvas y
-            crustaceos que busca en el fondo.
-          </li>
-          <li>
-            Comportamiento: gran nadador, se desplaza con las patas delanteras y
-            usa el pico para localizar alimento bajo el agua.
-          </li>
-          <li>Reproduccion: mamifero que pone huevos (monotremo).</li>
-        </ul>
-      </section>
+        <section class="content-section mb-5">
+          <h2 class="section-title">Características Principales</h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <ul class="features-list">
+                <li>
+                  <strong>Hábitat:</strong> Ríos, arroyos y lagos de agua dulce en el este de Australia
+                  y Tasmania.
+                </li>
+                <li>
+                  <strong>Alimentación:</strong> Invertebrados acuáticos como insectos, larvas y
+                  crustáceos que busca en el fondo.
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <ul class="features-list">
+                <li>
+                  <strong>Comportamiento:</strong> Gran nadador, se desplaza con las patas delanteras y
+                  usa el pico para localizar alimento bajo el agua.
+                </li>
+                <li>
+                  <strong>Reproducción:</strong> Mamífero que pone huevos (monotremo).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-      <section>
-        <h2>Fuentes</h2>
-        <ul>
-          <li>
-            <a
-              href="https://www.britannica.com/animal/platypus"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Encyclopaedia Britannica: Platypus
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.nationalgeographic.com/animals/mammals/p/platypus/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              National Geographic: Platypus
-            </a>
-          </li>
-        </ul>
-      </section>
+        <section class="content-section sources-section">
+          <h2 class="section-title">Fuentes</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <a
+                href="https://www.britannica.com/animal/platypus"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm d-block mb-3"
+              >
+                Encyclopaedia Britannica: Platypus
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a
+                href="https://www.nationalgeographic.com/animals/mammals/p/platypus/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm d-block mb-3"
+              >
+                 National Geographic: Platypus
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
+
+    <footer class="footer-section py-4 mt-5">
+      <div class="container text-center">
+        <p class="text-muted">&copy; 2026 Proyecto Animal. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
